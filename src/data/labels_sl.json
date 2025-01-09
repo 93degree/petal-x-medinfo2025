@@ -1,0 +1,44 @@
+{
+  "header": "Petal-X: Izračun tveganja za srčno-žilno bolezen (SŽB)",
+  "title": "Pojasnilo tveganja za SŽB",
+  "subtitle": "10-letno tveganje za (smrtne in nesmrtne) SŽB dogodke",
+  "contribution": "% vašega SŽB tveganja",
+  "risk": "SŽB tveganje (SCORE2)",
+  "riskLevels": [
+    "Nizko do zmerno SŽB tveganje",
+    "Visoko SŽB tveganje",
+    "Zelo visoko SŽB tveganje"
+  ],
+  "variables": {
+    "age": "Starost",
+    "smoking": "Kajenje",
+    "sbp": "Sistolični krvni tlak",
+    "nonhdl": "Ne-HDL holesterol"
+  },
+  "inputs": {
+    "patient": "Pacient",
+    "sex": "Spol",
+    "age": "Starost",
+    "sbp": "Sistolični krvni tlak",
+    "smoking": "Kajenje",
+    "thol": "Skupni holesterol",
+    "hdl": "HDL holesterol"
+  },
+  "patientPlaceholder": "Identifikacija pacienta",
+  "binaryLevels": [
+    "Ne",
+    "Da"
+  ],
+  "sexLevels": [
+    "Moški",
+    "Ženski"
+  ],
+  "nonhdlWarning": {
+    "title": "Ne-HDL holesterol izven območja",
+    "message": "Petal-X temelji na SCORE2 tabelah tveganja, ki ocenjujejo tveganje za SŽB pri pacientih med 40. in 69. letom starosti, s sistoličnim krvnim tlakom med 100 in 180 mmHg ter ne-HDL holesterolom med 3 in 7 mmol/L. Upoštevajte, da imajo pacienti z vrednostmi izven teh območij samodejno višje tveganje."
+  },
+  "riskExplanationWarning": {
+    "title": "Pojasnilo tveganja za SŽB ni na voljo",
+    "message": "Za dano kombinacijo dejavnikov tveganja Petal-X trenutno ne more pojasniti posameznega prispevka vsakega dejavnika k skupnemu tveganju za SŽB. Izračun tveganja SCORE2 ostaja veljaven, vendar vizualne razlage za to specifično kombinacijo vrednosti ni mogoče natančno prikazati."
+  }
+}

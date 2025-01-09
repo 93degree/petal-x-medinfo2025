@@ -1,0 +1,44 @@
+{
+  "header": "Petal-X: Cardiovascular Disease (CVD) Risk Calculator",
+  "title": "CVD Risk Explanation",
+  "subtitle": "10-year risk of (fatal and non-fatal) CV events",
+  "contribution": "% of your CVD risk",
+  "risk": "CVD Risk (SCORE2)",
+  "riskLevels": [
+    "Low-to-moderate CVD Risk",
+    "High CVD Risk",
+    "Very High CVD Risk"
+  ],
+  "variables": {
+    "age": "Age",
+    "smoking": "Smoking",
+    "sbp": "Systolic Blood Pressure",
+    "nonhdl": "Non-HDL Cholesterol"
+  },
+  "inputs": {
+    "patient": "Patient",
+    "sex": "Sex",
+    "age": "Age",
+    "sbp": "Systolic blood pressure",
+    "smoking": "Smoking",
+    "thol": "Total cholesterol",
+    "hdl": "HDL cholesterol"
+  },
+  "patientPlaceholder": "Patient identification",
+  "binaryLevels": [
+    "No",
+    "Yes"
+  ],
+  "sexLevels": [
+    "Male",
+    "Female"
+  ],
+  "nonhdlWarning": {
+    "title": "Non-HDL cholesterol out of range",
+    "message": "Petal-X is based on the SCORE2 Risk Charts, which evaluate CVD risk for patients between 40 and 69 years of age, with a systolic blood pressure between 100 - 180 mmHg and a non-HDL cholesterol between 3 and 7 mmol/L. Please note that patients with examination data over these value range are automatically at higher risk."
+  },
+  "riskExplanationWarning": {
+    "title": "CVD Risk Explanation not available",
+    "message": "For the given combination of patient risk factors, Petal-X cannot currently explain the individual contribution of each risk factor to the overall CVD risk. The SCORE2 risk calculation remains valid, but the visual explanation cannot be displayed accurately for this specific combination of values."
+  }
+}
